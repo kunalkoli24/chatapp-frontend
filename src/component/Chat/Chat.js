@@ -9,7 +9,7 @@ import closeIcon from "../../Images/closeIcon.png";
 
 let socket;
 
-const ENDPOINT = "http://localhost:4500/";
+const ENDPOINT = "https://chatapp-server-sbtf.onrender.com";
 
 const Chat = () => {
   const [id, setId] = useState("");
