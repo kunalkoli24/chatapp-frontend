@@ -1,4 +1,4 @@
-body{
+/* body{
     margin: 0%;
     
 }
@@ -80,6 +80,89 @@ body{
     }
 
     .messageBox{
+        padding: 3vw !important;
+        margin: 3vw !important;
+        border-radius: 1.5vmax !important;
+        font-size: 3.7vw !important;
+    }
+} */
+
+body {
+    margin: 0%;
+}
+
+@media (max-aspect-ratio: 7/10) {
+    /* Chat container adjustments */
+    .chatContainer {
+        background: white;
+        height: 100vh !important;
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header adjustments */
+    .header {
+        height: 10% !important;
+    }
+
+    .header > h2 {
+        margin: 8vw !important;
+        font-size: 5vw !important;
+    }
+
+    .header img {
+        margin: 6vw !important;
+        transform: scale(2) !important;
+    }
+
+    .header > img:hover {
+        transform: scale(3.2) !important;
+    }
+
+    /* Chat box should take the remaining space and be scrollable */
+    .chatBox {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 4vw !important;
+    }
+
+    /* Input box adjustments */
+    .inputBox {
+        height: auto !important;
+        padding: 2vw !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #chatInput {
+        width: 80%;
+        padding: 4vw !important;
+        font-size: 4vw !important;
+        border-top: 0.2vmax solid rgb(117, 101, 101);
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        background: white;
+    }
+
+    .sendbtn {
+        background: crimson;
+        color: white;
+        border: none;
+        width: 18%;
+        font-size: 5vw !important;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .sendbtn:hover {
+        background: rgb(219, 12, 53);
+    }
+
+    /* Message box adjustments */
+    .messageBox {
         padding: 3vw !important;
         margin: 3vw !important;
         border-radius: 1.5vmax !important;
