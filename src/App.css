@@ -38,7 +38,7 @@ body{
 
     .chatContainer{
         background: white;
-        height: 100% !important;
+        height: 100vh !important;
         width: 100% !important;
     }
 
@@ -61,12 +61,12 @@ body{
     }
     
     .chatBox{
-        height: 80% !important;
+        height: 80vh !important;
     }
 
     .inputBox{
-        height: 10% !important;
-      
+        height: 12vh !important;
+       padding: 3vw;
     }
 
     #chatInput{
