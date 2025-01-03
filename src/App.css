@@ -2,7 +2,7 @@ body{
     margin: 0%;
 }
 
-@media (max-aspect-ratio: 7/10) {
+/* @media (max-aspect-ratio: 7/10) {
     .JoinContainer{
         width: 100% !important;
         
@@ -87,5 +87,97 @@ body{
         margin: 3vw !important;
         border-radius: 1.5vmax !important;
         font-size: 3.7vw !important;
+    }
+} */
+
+@media (max-aspect-ratio: 7/10) {
+    .chatContainer {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures input field stays at the bottom */
+        height: 100vh; /* Full viewport height */
+        width: 100%;
+    }
+
+    .header {
+        height: 10vh; /* Header occupies 10% of the screen */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4vw;
+        background-color: #f5f5f5;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header > h2 {
+        font-size: 5vw; /* Responsive font size */
+        margin: 0;
+    }
+
+    .header > img {
+        height: 6vw;
+        cursor: pointer;
+    }
+
+    .chatBox {
+        flex-grow: 1; /* Chatbox takes up the remaining space */
+        overflow-y: auto; /* Enable scrolling for messages */
+        padding: 2vw;
+        background-color: #fafafa;
+    }
+
+    .inputBox {
+        height: 10vh; /* Input area occupies 10% of the screen */
+        display: flex;
+        align-items: center;
+        padding: 0 4vw;
+        background-color: #fff;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #chatInput {
+        flex: 1; /* Input takes up the remaining space */
+        padding: 2vw;
+        font-size: 4vw;
+        border: 1px solid #ccc;
+        border-radius: 1vw;
+        outline: none;
+        margin-right: 2vw;
+    }
+
+    .sendbtn {
+        padding: 2vw 4vw;
+        font-size: 4vw;
+        font-weight: bold;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 1vw;
+        cursor: pointer;
+    }
+
+    .sendbtn:hover {
+        background-color: #0056b3;
+    }
+
+    .messageBox {
+        padding: 3vw;
+        margin: 2vw 0;
+        border-radius: 1.5vw;
+        font-size: 3.5vw;
+        word-wrap: break-word;
+        max-width: 80%;
+    }
+
+    .messageBox.left {
+        background-color: #f1f1f1;
+        align-self: flex-start;
+    }
+
+    .messageBox.right {
+        background-color: #007bff;
+        color: white;
+        align-self: flex-end;
     }
 }
