@@ -37,7 +37,7 @@ body{
         font-weight: bold;
     }
 
-    .chatContainer{
+    /* .chatContainer{
         background: white;
         height: 100vh !important;
         width: 100% !important;
@@ -84,5 +84,49 @@ body{
         margin: 3vw !important;
         border-radius: 1.5vmax !important;
         font-size: 3.7vw !important;
+    } */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .chatContainer {
+        width: 90%;
+        height: 70%;
+    }
+
+    .header > h2 {
+        font-size: 2.5vmax;
+    }
+
+    #chatInput {
+        font-size: 1.5vmax;
+        padding: 1.5vmax;
+    }
+
+    .sendbtn {
+        font-size: 1.5vmax;
+        width: 25%;
     }
 }
+
+@media (max-width: 480px) {
+    .chatContainer {
+        width: 100%;
+        height: 80%;
+    }
+
+    .header > h2 {
+        font-size: 3vmax;
+    }
+
+    #chatInput {
+        font-size: 2vmax;
+        padding: 2vmax;
+    }
+
+    .sendbtn {
+        font-size: 2vmax;
+        width: 30%;
+    }
+}
+
